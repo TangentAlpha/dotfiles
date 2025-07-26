@@ -25,7 +25,12 @@
         }
     ],
     "profiles": {
-        "defaults": {},
+        "defaults": {
+            // Light colour scheme
+            "colorScheme": "One Half Light",
+            // Semi-transparency for Mica to be visible
+            "opacity": 50
+        },
         "list": [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
@@ -90,5 +95,22 @@
         ]
     },
     "schemes": [],
-    "themes": []
+    // Custom theme
+    "theme": "Mica",
+    "themes": [
+        {
+            // https://learn.microsoft.com/en-us/windows/terminal/customize-settings/themes#mica
+            "name": "Mica",
+            // Set the tab background to white (default: "#f9f9f9").
+            "tab": {
+                "background": "#fff"
+            },
+            "window": {
+                // Light theme works better for my eyes.
+                "applicationTheme": "light",
+                // Use Mica for aesthetics.
+                "useMica": true
+            }
+        }
+    ]
 }
