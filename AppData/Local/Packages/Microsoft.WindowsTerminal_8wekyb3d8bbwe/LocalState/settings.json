@@ -38,6 +38,7 @@
                 "hidden": false,
                 "name": "Windows PowerShell"
             },
+
             {
                 "commandline": "%SystemRoot%\\System32\\cmd.exe",
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
@@ -56,21 +57,34 @@
                 "name": "Ubuntu",
                 "source": "Windows.Terminal.Wsl"
             },
+
             {
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-                "hidden": false,
+                "hidden": true, // Unused profile
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
             },
             {
+                "guid": "{c451f833-36ee-55b8-85b5-7527d64aaab9}",
+                "hidden": true, // Unused profile
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{4b318b38-5352-58c5-b43f-b43eef14f11f}",
+                "hidden": true, // Unused profile
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
                 "guid": "{0cdcf9c8-d77b-530e-bd5b-d93225e30e62}",
-                "hidden": false,
+                "hidden": true, // Unused profile
                 "name": "Developer Command Prompt for VS 2022",
                 "source": "Windows.Terminal.VisualStudio"
             },
             {
                 "guid": "{84281814-ad73-588b-8673-9970da17d821}",
-                "hidden": false,
+                "hidden": true, // Unused profile
                 "name": "Developer PowerShell for VS 2022",
                 "source": "Windows.Terminal.VisualStudio"
             },
@@ -80,12 +94,14 @@
                 "name": "Visual Studio Debug Console",
                 "source": "VSDebugConsole"
             },
+
             {
                 "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
                 "hidden": false,
                 "name": "Git Bash",
                 "source": "Git"
             },
+
             {
                 "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
                 "hidden": false,
