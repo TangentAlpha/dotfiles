@@ -4,7 +4,7 @@
     "actions": [],
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+    "defaultProfile": "{cec47a2e-519e-4440-afcd-04503b1585e2}", // Cygwin Zsh
     "keybindings": [
         {
             "id": "Terminal.CopyToClipboard",
@@ -26,8 +26,13 @@
     ],
     "profiles": {
         "defaults": {
-            // Light colour scheme
-            "colorScheme": "One Half Light",
+            // Light colour scheme works better for my eyes.
+            "colorScheme": "One Half Light (modified)",
+            "cursorShape": "filledBox", // Customized
+            "font": {
+                // Ligatures are enabled by default.
+                "face": "Cascadia Code PL"
+            },
             // Semi-transparency for Mica to be visible
             "opacity": 50
         },
@@ -95,6 +100,13 @@
                 "source": "VSDebugConsole"
             },
 
+            // Custom profile Cygwin Zsh
+            {
+                "commandline": "C:\\cygwin64\\bin\\bash.exe /bin/xhere /bin/zsh",
+                "guid": "{cec47a2e-519e-4440-afcd-04503b1585e2}",
+                "icon": "C:\\cygwin64\\Cygwin-Terminal.ico",
+                "name": "Cygwin Zsh"
+            },
             {
                 "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
                 "hidden": false,
@@ -110,9 +122,32 @@
             }
         ]
     },
-    "schemes": [],
-    // Custom theme
-    "theme": "Mica",
+    "schemes": [
+        {
+            "background": "#FAFAFA",
+            "black": "#383A42",
+            "blue": "#0184BC",
+            "brightBlack": "#4F525D",
+            "brightBlue": "#61AFEF",
+            "brightCyan": "#56B5C1",
+            "brightGreen": "#98C379",
+            "brightPurple": "#C577DD",
+            "brightRed": "#DF6C75",
+            "brightWhite": "#EEEEEC", // Borrowed from Tango Light (original: "#FFFFFF").
+            "brightYellow": "#E4C07A",
+            "cursorColor": "#4F525D",
+            "cyan": "#0997B3",
+            "foreground": "#383A42",
+            "green": "#50A14F",
+            "name": "One Half Light (modified)", // "brightWhite" and "white" from the original scheme are not distinguishable from the background.
+            "purple": "#A626A4",
+            "red": "#E45649",
+            "selectionBackground": "#383A42",
+            "white": "#D3D7CF", // Borrowed from Tango Light (original: "#FAFAFA").
+            "yellow": "#C18301"
+        }
+    ],
+    "theme": "Mica", // Custom theme
     "themes": [
         {
             // https://learn.microsoft.com/en-us/windows/terminal/customize-settings/themes#mica
@@ -122,8 +157,6 @@
                 "background": "#fff"
             },
             "window": {
-                // Light theme works better for my eyes.
-                "applicationTheme": "light",
                 // Use Mica for aesthetics.
                 "useMica": true
             }
