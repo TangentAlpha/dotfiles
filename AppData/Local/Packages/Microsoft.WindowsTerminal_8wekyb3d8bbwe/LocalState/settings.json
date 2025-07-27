@@ -72,7 +72,7 @@
             {
                 "guid": "{c451f833-36ee-55b8-85b5-7527d64aaab9}",
                 "hidden": true, // Unused profile
-                "name": "Developer Command Prompt for VS 2022",
+                "name": "Developer CMD for VS 2022", // Default: "Developer Command Prompt for VS 2022"
                 "source": "Windows.Terminal.VisualStudio"
             },
             {
@@ -84,7 +84,7 @@
             {
                 "guid": "{0cdcf9c8-d77b-530e-bd5b-d93225e30e62}",
                 "hidden": true, // Unused profile
-                "name": "Developer Command Prompt for VS 2022",
+                "name": "Developer CMD for VS 2022", // Default: "Developer Command Prompt for VS 2022"
                 "source": "Windows.Terminal.VisualStudio"
             },
             {
@@ -133,7 +133,7 @@
             "brightGreen": "#98C379",
             "brightPurple": "#C577DD",
             "brightRed": "#DF6C75",
-            "brightWhite": "#EEEEEC", // Borrowed from Tango Light (original: "#FFFFFF").
+            "brightWhite": "#E1E1E1", // Original: "#FFFFFF"
             "brightYellow": "#E4C07A",
             "cursorColor": "#4F525D",
             "cyan": "#0997B3",
@@ -143,7 +143,7 @@
             "purple": "#A626A4",
             "red": "#E45649",
             "selectionBackground": "#383A42",
-            "white": "#D3D7CF", // Borrowed from Tango Light (original: "#FAFAFA").
+            "white": "#AFAFAF", // Original: "#FAFAFA"
             "yellow": "#C18301"
         }
     ],
@@ -152,11 +152,19 @@
         {
             // https://learn.microsoft.com/en-us/windows/terminal/customize-settings/themes#mica
             "name": "Mica",
-            // Set the tab background to white (default: "#f9f9f9").
+            // Set the tab background to white (default: "#F9F9F9").
             "tab": {
-                "background": "#fff"
+                "background": "#FFFFFFFF",
+                "iconStyle": "default",
+                "showCloseButton": "always",
+                "unfocusedBackground": null
             },
             "window": {
+                // This is a light theme.
+                "applicationTheme": "light",
+                "experimental.rainbowFrame": false,
+                "frame": null,
+                "unfocusedFrame": null,
                 // Use Mica for aesthetics.
                 "useMica": true
             }
