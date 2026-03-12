@@ -26,6 +26,8 @@
     ],
     "profiles": {
         "defaults": {
+            // Adjust the foreground colour to be more distinguishable from the background colour.
+            "adjustIndistinguishableColors": "always",
             // Light colour scheme works better for my eyes.
             "colorScheme": "One Half Light (modified)",
             "cursorShape": "filledBox", // Customized
@@ -133,17 +135,18 @@
             "brightGreen": "#98C379",
             "brightPurple": "#C577DD",
             "brightRed": "#DF6C75",
-            "brightWhite": "#E1E1E1", // Original: "#FFFFFF"
+            // Adjusted to #5F5F5F after setting `adjustIndistinguishableColors` to "always".
+            "brightWhite": "#FFFFFF",
             "brightYellow": "#E4C07A",
             "cursorColor": "#4F525D",
             "cyan": "#0997B3",
             "foreground": "#383A42",
             "green": "#50A14F",
-            "name": "One Half Light (modified)", // "brightWhite" and "white" from the original scheme are not distinguishable from the background.
+            "name": "One Half Light (modified)", // Customized colour scheme
             "purple": "#A626A4",
             "red": "#E45649",
             "selectionBackground": "#383A42",
-            "white": "#AFAFAF", // Original: "#FAFAFA"
+            "white": "#484848", // Original: "#FAFAFA"
             "yellow": "#C18301"
         }
     ],
