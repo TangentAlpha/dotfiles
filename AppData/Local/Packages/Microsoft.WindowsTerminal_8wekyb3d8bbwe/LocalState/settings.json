@@ -28,8 +28,11 @@
         "defaults": {
             // Adjust the foreground colour to be more distinguishable from the background colour.
             "adjustIndistinguishableColors": "always",
-            // Light colour scheme works better for my eyes.
-            "colorScheme": "One Half Light (modified)",
+            // Automatically switch colour scheme with the active OS theme.
+            "colorScheme": {
+                "light": "One Half Light (modified)",
+                "dark": "One Half Dark"
+            },
             "cursorShape": "filledBox", // Customized
             "font": {
                 // Ligatures are enabled by default.
@@ -150,11 +153,15 @@
             "yellow": "#C18301"
         }
     ],
-    "theme": "Mica", // Custom theme
+    // Follow the OS theme.
+    "theme": {
+        "light": "Mica Light",
+        "dark": "Mica Dark"
+    },
     "themes": [
         {
             // https://learn.microsoft.com/en-us/windows/terminal/customize-settings/themes#mica
-            "name": "Mica",
+            "name": "Mica Light",
             // Set the tab background to white (default: "#F9F9F9").
             "tab": {
                 "background": "#FFFFFFFF",
@@ -169,6 +176,23 @@
                 "frame": null,
                 "unfocusedFrame": null,
                 // Use Mica for aesthetics.
+                "useMica": true
+            }
+        },
+        // Dark counterpart to Mica Light
+        {
+            "name": "Mica Dark",
+            "tab": {
+                "background": "#202020FF",
+                "iconStyle": "default",
+                "showCloseButton": "always",
+                "unfocusedBackground": null
+            },
+            "window": {
+                "applicationTheme": "dark",
+                "experimental.rainbowFrame": false,
+                "frame": null,
+                "unfocusedFrame": null,
                 "useMica": true
             }
         }
