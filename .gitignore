@@ -2,6 +2,7 @@
 *
 !.gitattributes
 !.gitignore
+!.markdownlint.yaml
 !.zshrc
 !AppData
 !AppData/Local
