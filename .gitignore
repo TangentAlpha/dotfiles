@@ -1,5 +1,8 @@
 # Ignore everything except for some config files.
 *
+!.copilot
+!.copilot/agents
+!.copilot/agents/Document.agent.md
 !.gitattributes
 !.gitignore
 !.markdownlint.yaml
