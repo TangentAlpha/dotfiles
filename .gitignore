@@ -6,6 +6,8 @@
 !.gitattributes
 !.gitignore
 !.markdownlint.yaml
+!.vscode
+!.vscode/settings.json
 !.zshrc
 !AppData
 !AppData/Local
